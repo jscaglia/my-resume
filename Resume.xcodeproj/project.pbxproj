@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011E984028D7D67A0034BC95 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E983F28D7D67A0034BC95 /* Education.swift */; };
+		011E984228D7D6B50034BC95 /* Experience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E984128D7D6B50034BC95 /* Experience.swift */; };
+		011E984428D7D6D90034BC95 /* CoverLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E984328D7D6D90034BC95 /* CoverLetter.swift */; };
+		011E984928D7D7B10034BC95 /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E984828D7D7B10034BC95 /* Languages.swift */; };
+		011E984B28D7F5DD0034BC95 /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011E984A28D7F5DD0034BC95 /* Interests.swift */; };
+		01737E8C28D6A7C4002142EA /* AboutMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01737E8B28D6A7C4002142EA /* AboutMe.swift */; };
+		01737E8E28D6A7EA002142EA /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01737E8D28D6A7EA002142EA /* Skills.swift */; };
+		01737E9028D6A7FD002142EA /* ContactMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01737E8F28D6A7FD002142EA /* ContactMe.swift */; };
+		01737E9228D6A813002142EA /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01737E9128D6A813002142EA /* Portfolio.swift */; };
 		01A356D828D6A06B0019DF2F /* ResumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A356D728D6A06B0019DF2F /* ResumeApp.swift */; };
 		01A356DA28D6A06B0019DF2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A356D928D6A06B0019DF2F /* ContentView.swift */; };
 		01A356DC28D6A06C0019DF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01A356DB28D6A06C0019DF2F /* Assets.xcassets */; };
@@ -16,6 +25,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011E983F28D7D67A0034BC95 /* Education.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		011E984128D7D6B50034BC95 /* Experience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Experience.swift; sourceTree = "<group>"; };
+		011E984328D7D6D90034BC95 /* CoverLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverLetter.swift; sourceTree = "<group>"; };
+		011E984828D7D7B10034BC95 /* Languages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
+		011E984A28D7F5DD0034BC95 /* Interests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interests.swift; sourceTree = "<group>"; };
+		01737E8B28D6A7C4002142EA /* AboutMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMe.swift; sourceTree = "<group>"; };
+		01737E8D28D6A7EA002142EA /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		01737E8F28D6A7FD002142EA /* ContactMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMe.swift; sourceTree = "<group>"; };
+		01737E9128D6A813002142EA /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		01A356D428D6A06B0019DF2F /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A356D728D6A06B0019DF2F /* ResumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeApp.swift; sourceTree = "<group>"; };
 		01A356D928D6A06B0019DF2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +55,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		011E983E28D7D65D0034BC95 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				011E983F28D7D67A0034BC95 /* Education.swift */,
+				011E984128D7D6B50034BC95 /* Experience.swift */,
+				011E984328D7D6D90034BC95 /* CoverLetter.swift */,
+				011E984828D7D7B10034BC95 /* Languages.swift */,
+				011E984A28D7F5DD0034BC95 /* Interests.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		01737E8A28D6A7A1002142EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				011E983E28D7D65D0034BC95 /* Pages */,
+				01737E8B28D6A7C4002142EA /* AboutMe.swift */,
+				01737E8D28D6A7EA002142EA /* Skills.swift */,
+				01737E8F28D6A7FD002142EA /* ContactMe.swift */,
+				01737E9128D6A813002142EA /* Portfolio.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		01A356CB28D6A06B0019DF2F = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +98,7 @@
 		01A356D628D6A06B0019DF2F /* Resume */ = {
 			isa = PBXGroup;
 			children = (
+				01737E8A28D6A7A1002142EA /* Views */,
 				01A356D728D6A06B0019DF2F /* ResumeApp.swift */,
 				01A356D928D6A06B0019DF2F /* ContentView.swift */,
 				01A356DB28D6A06C0019DF2F /* Assets.xcassets */,
@@ -145,10 +188,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01737E9228D6A813002142EA /* Portfolio.swift in Sources */,
 				01A356E428D6A06C0019DF2F /* Resume.xcdatamodeld in Sources */,
+				011E984428D7D6D90034BC95 /* CoverLetter.swift in Sources */,
+				01737E8E28D6A7EA002142EA /* Skills.swift in Sources */,
+				011E984228D7D6B50034BC95 /* Experience.swift in Sources */,
+				011E984928D7D7B10034BC95 /* Languages.swift in Sources */,
+				01737E8C28D6A7C4002142EA /* AboutMe.swift in Sources */,
+				011E984B28D7F5DD0034BC95 /* Interests.swift in Sources */,
 				01A356E128D6A06C0019DF2F /* Persistence.swift in Sources */,
+				01737E9028D6A7FD002142EA /* ContactMe.swift in Sources */,
 				01A356DA28D6A06B0019DF2F /* ContentView.swift in Sources */,
 				01A356D828D6A06B0019DF2F /* ResumeApp.swift in Sources */,
+				011E984028D7D67A0034BC95 /* Education.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
