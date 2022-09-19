@@ -74,10 +74,7 @@ struct ContactMe: View {
                                 
                                 Spacer()
                                 
-                                ZStack{
-                                    Color(.white).frame(width: 75, height: 75).cornerRadius(50)
-                                    Image("Github").resizable().aspectRatio(contentMode: .fit).frame(width: 75).padding()
-                                }
+                                Image("Github").resizable().aspectRatio(contentMode: .fit).frame(width: 75).padding()
                                 
                             }.padding(.horizontal)
                         }
@@ -119,10 +116,7 @@ struct ContactMe: View {
                                 
                                 Spacer()
                                 
-                                ZStack{
-                                    Color(.white).frame(width: 75, height: 75)
-                                    Image("Facebook").resizable().aspectRatio(contentMode: .fit).frame(width: 75).padding()
-                                }
+                                Image("Facebook").resizable().aspectRatio(contentMode: .fit).frame(width: 75).padding()
                                 
                             }.padding(.horizontal)
                         }

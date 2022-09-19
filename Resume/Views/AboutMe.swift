@@ -9,6 +9,10 @@ import SwiftUI
 let skyBlue = Color(red: 0.4627, green: 0.8392, blue: 1.0)
 
 struct AboutMe: View {
+    static var isIPad: Bool {
+        UIDevice.current.userInterfaceIdiom == .pad
+    }
+    
     @State var selected: Int64 = 0
     
     var body: some View {
@@ -20,7 +24,7 @@ struct AboutMe: View {
                     Image(String("Me")).resizable().aspectRatio(contentMode: .fit).frame(width: 100).border(skyBlue, width: 2).shadow(color: skyBlue, radius: 5)
                     
                     Text("Jonatan Scaglia")
-                        .font(.largeTitle)
+                        .font(.title)
                         .font(.headline)
                     
                     VStack {
@@ -31,21 +35,21 @@ struct AboutMe: View {
                                 .font(.headline)
                             
                             Text("Project development and leadership (more than 10 years in the market) Sports and Drones enthusiast.")
-                                .font(.system(size: 16))
+                                .font(.system(size: (AboutMe.isIPad ? 22 : 16)))
                                 .multilineTextAlignment(.center)
                         }.padding(.horizontal)
                         
                         ScrollView(.horizontal,showsIndicators: false){
-                            HStack{
+                            HStack(){
                                 Button {
                                     selected = 0
                                 } label: {
                                     ZStack{
-                                        Rectangle().frame(width: 150, height: 100).foregroundColor(.clear).border((selected == 0 ? skyBlue : .white), width: 2).shadow(color: (selected == 0 ? skyBlue : .white), radius: 5)
+                                        Rectangle().frame(width: (AboutMe.isIPad ? 200 : 150), height: 100).foregroundColor(.clear).border((selected == 0 ? skyBlue : .white), width: 2).shadow(color: (selected == 0 ? skyBlue : .white), radius: 5)
                                         
                                         VStack{
                                             Image(systemName: "person").resizable().aspectRatio( contentMode: .fit).frame(width: 40, height: 50)
-                                            Text("About me").font(.system(size: 12))
+                                            Text("About me").font(.system(size: (AboutMe.isIPad ? 16 : 12)))
                                         }.foregroundColor((selected == 0 ? skyBlue : .white))
                                         
                                     }
@@ -55,11 +59,11 @@ struct AboutMe: View {
                                     selected = 1
                                 } label: {
                                     ZStack{
-                                        Rectangle().frame(width: 150, height: 100).foregroundColor(.clear).border((selected == 1 ? skyBlue : .white), width: 2).shadow(color: (selected == 1 ? skyBlue : .white), radius: 5)
+                                        Rectangle().frame(width: (AboutMe.isIPad ? 200 : 150), height: 100).foregroundColor(.clear).border((selected == 1 ? skyBlue : .white), width: 2).shadow(color: (selected == 1 ? skyBlue : .white), radius: 5)
                                         
                                         VStack{
                                             Image(systemName: "laptopcomputer").resizable().aspectRatio( contentMode: .fit).frame(width: 40, height: 50)
-                                            Text("Experience").font(.system(size: 12))
+                                            Text("Experience").font(.system(size: (AboutMe.isIPad ? 16 : 12)))
                                         }.foregroundColor((selected == 1 ? skyBlue : .white))
                                     }
                                 }
@@ -68,11 +72,11 @@ struct AboutMe: View {
                                     selected = 2
                                 } label: {
                                     ZStack{
-                                        Rectangle().frame(width: 150, height: 100).foregroundColor(.clear).border((selected == 2 ? skyBlue : .white), width: 2).shadow(color: (selected == 2 ? skyBlue : .white), radius: 5)
+                                        Rectangle().frame(width: (AboutMe.isIPad ? 200 : 150), height: 100).foregroundColor(.clear).border((selected == 2 ? skyBlue : .white), width: 2).shadow(color: (selected == 2 ? skyBlue : .white), radius: 5)
                                         
                                         VStack{
                                             Image(systemName: "graduationcap").resizable().aspectRatio( contentMode: .fit).frame(width: 40, height: 50)
-                                            Text("Qualifications").font(.system(size: 12))
+                                            Text("Qualifications").font(.system(size: (AboutMe.isIPad ? 16 : 12)))
                                         }.foregroundColor((selected == 2 ? skyBlue : .white))
                                     }
                                     
@@ -82,11 +86,11 @@ struct AboutMe: View {
                                     selected = 3
                                 } label: {
                                     ZStack{
-                                        Rectangle().frame(width: 150, height: 100).foregroundColor(.clear).border((selected == 3 ? skyBlue : .white), width: 2).shadow(color: (selected == 3 ? skyBlue : .white), radius: 5)
+                                        Rectangle().frame(width: (AboutMe.isIPad ? 200 : 150), height: 100).foregroundColor(.clear).border((selected == 3 ? skyBlue : .white), width: 2).shadow(color: (selected == 3 ? skyBlue : .white), radius: 5)
                                         
                                         VStack{
                                             Image(systemName: "message").resizable().aspectRatio( contentMode: .fit).frame(width: 40, height: 50)
-                                            Text("Languages").font(.system(size: 12))
+                                            Text("Languages").font(.system(size: (AboutMe.isIPad ? 16 : 12)))
                                         }.foregroundColor((selected == 3 ? skyBlue : .white))
                                     }
                                 }
@@ -95,16 +99,16 @@ struct AboutMe: View {
                                     selected = 4
                                 } label: {
                                     ZStack{
-                                        Rectangle().frame(width: 150, height: 100).foregroundColor(.clear).border((selected == 4 ? skyBlue : .white), width: 2).shadow(color: (selected == 4 ? skyBlue : .white), radius: 5)
+                                        Rectangle().frame(width: (AboutMe.isIPad ? 200 : 150), height: 100).foregroundColor(.clear).border((selected == 4 ? skyBlue : .white), width: 2).shadow(color: (selected == 4 ? skyBlue : .white), radius: 5)
                                         
                                         VStack{
                                             Image(systemName: "sportscourt").resizable().aspectRatio( contentMode: .fit).frame(width: 40, height: 50)
-                                            Text("Interests").font(.system(size: 12))
+                                            Text("Interests").font(.system(size: (AboutMe.isIPad ? 16 : 12)))
                                         }.foregroundColor((selected == 4 ? skyBlue : .white))
                                     }
                                 }
                             }
-                        }.padding()
+                        }.multilineTextAlignment(.center).padding(.horizontal)
                         
                         switch selected{
                         case 0:
